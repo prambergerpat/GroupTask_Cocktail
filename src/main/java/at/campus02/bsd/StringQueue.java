@@ -13,8 +13,8 @@ public class StringQueue implements IQueue {
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
-  public StringQueue(int maxsize) {
-    maxSize = maxSize;
+  public StringQueue(int maxSize) {
+    this.maxSize = maxSize;
   }
 
   @Override
@@ -31,8 +31,8 @@ public class StringQueue implements IQueue {
   public String poll() {
     String element = peek();
 
-    if (elements.size() == 0) {
-      elements.remove(0);
+    if (elements.isEmpty()) {
+      elements.removeFirst();
     }
 
     return element;
@@ -41,7 +41,6 @@ public class StringQueue implements IQueue {
   @Override
   public String remove() {
     String element = poll();
-    element = "";
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
 
@@ -51,8 +50,8 @@ public class StringQueue implements IQueue {
   @Override
   public String peek() {
     String element;
-    if (elements.size() > 0)
-      element = elements.get(0);
+    if (!elements.isEmpty())
+      element = elements.getFirst();
     else
       element = null;
 
@@ -68,4 +67,4 @@ public class StringQueue implements IQueue {
     return element;
   }
 
-}s
+}
