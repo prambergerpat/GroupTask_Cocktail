@@ -12,8 +12,8 @@
 - [x] create branch readme
 - [ ] create README-file and adding information
 
-- [ ] create branch maven_detail
-- [ ] extend the pom-file and testing the configuration
+- [x] create branch maven_detail
+- [x] extend the pom-file and testing the configuration
 
 - [ ] create branch bug_hunt
 - [ ] correct mistakes in the code
