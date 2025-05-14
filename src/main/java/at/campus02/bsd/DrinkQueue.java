@@ -1,5 +1,7 @@
 package at.campus02.bsd;
 
+import java.util.NoSuchElementException;
+
 public class DrinkQueue implements IQueue{
 
     @Override
@@ -13,13 +15,16 @@ public class DrinkQueue implements IQueue{
     }
 
     @Override
-    public String remove() {
-        return "";
+    public String remove() throws NoSuchElementException {
+        try {
+            return poll();
+        } catch (NoSuchElementException e) {
+            throw new NoSuchElementException("there's no element any more");
+        }
     }
 
     @Override
     public String peek() {
-        return "";
     }
 
     @Override
