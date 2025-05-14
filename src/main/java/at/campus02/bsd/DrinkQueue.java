@@ -1,28 +1,27 @@
 package at.campus02.bsd;
 
-public class DrinkQueue implements IQueue{
+import java.util.ArrayList;
 
-    @Override
+public class DrinkQueue{
+
+    ArrayList<SimpleDrink> elements = new ArrayList<SimpleDrink>();
+
     public boolean offer(String obj) {
         return false;
     }
 
-    @Override
     public String poll() {
         return "";
     }
 
-    @Override
     public String remove() {
         return "";
     }
 
-    @Override
     public String peek() {
         return "";
     }
 
-    @Override
     public String element() {
         return "";
     }
