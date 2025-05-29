@@ -1,19 +1,20 @@
 package at.campus02.bsd;
 /**
  * Class represents a simple drink liquid which can be used in
- * drinks
+ * drinks.
+ * This class extends {@link Drink} and provides the volume and alcohol content based on the liquid.
  */
 public class SimpleDrink extends Drink{
     /**
-     * uses only one liquid
+     * Liquid used for the drink
      */
     protected Liquid l;
     /**
-     * Creates a SimpleDrink object with given age and
-     * liquid
+     * Creates a SimpleDrink object with given name and
+     * liquid.
      *
      * @param name name of drink
-     * @param l only liquid in drink
+     * @param l liquid  used in the drink
      */
     SimpleDrink(String name, Liquid l){
         super(name);
@@ -23,7 +24,7 @@ public class SimpleDrink extends Drink{
     /**
      * Returns volume of liquid l
      *
-     * @return the volume of drink in litre
+     * @return the volume of drink in liters
      */
     @Override
     public double getVolume() {
