@@ -48,13 +48,11 @@ public class Cocktail extends Drink{
 
     @Override
     public boolean isAlcoholic() {
-        boolean isAlcoholic = false;
-
         for (Liquid element : incredients) {
             if (element.getAlcoholPercent() != 0.0) {
-                isAlcoholic = true;
+                return true;
             }
         }
-        return isAlcoholic;
+        return false;
     }
 }
