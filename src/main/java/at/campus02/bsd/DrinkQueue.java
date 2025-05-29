@@ -1,6 +1,3 @@
-package at.campus02.bsd;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -8,12 +5,19 @@ public class DrinkQueue{
 
     List<Drink> elements = new ArrayList<Drink>();
 
-    public boolean offer(String obj) {
-        return false;
+    public boolean offer(SimpleDrink drink) {
+        if (drink == null) {
+            return false;
+        }
+        elements.add(drink);
+        return true;
     }
 
     public String poll() {
-        return "";
+        if (elements.isEmpty()) {
+            return null;
+        }
+        return elements.removeFirst().getName();
     }
 
     public Drink remove() {
