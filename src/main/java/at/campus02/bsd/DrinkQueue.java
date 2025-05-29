@@ -6,12 +6,19 @@ public class DrinkQueue{
 
     ArrayList<SimpleDrink> elements = new ArrayList<SimpleDrink>();
 
-    public boolean offer(String obj) {
-        return false;
+    public boolean offer(SimpleDrink drink) {
+        if (drink == null) {
+            return false;
+        }
+        elements.add(drink);
+        return true;
     }
 
     public String poll() {
-        return "";
+        if (elements.isEmpty()) {
+            return null;
+        }
+        return elements.removeFirst().getName();
     }
 
     public String remove() {
