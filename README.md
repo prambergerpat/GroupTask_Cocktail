@@ -38,8 +38,24 @@
 - [ ] create maven_site documentation
 - [ ] including files from each member
 
-## Features
+## Features and Usages
+-	Create liquid objects
+-	Combine liquids into a cocktail
+-	Manage drinks using a queue
+-	Add drinks to the queue
+-	Remove drinks from the queue
+-	View test coverage using Jacoco
+-	Documentation and test reports with mvn site
+
 
 ## Installation
+Requirements:
+-	Java
+-	Maven
+-	Git
 
-## Usages
+```bash
+git clone https://github.com/your-username/GroupTask_Cocktail.git
+cd GroupTask_Cocktail
+mvn clean install
+```
