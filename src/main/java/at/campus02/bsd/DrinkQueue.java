@@ -1,3 +1,9 @@
+package at.campus02.bsd;
+
+import at.campus02.bsd.Drink;
+import at.campus02.bsd.SimpleDrink;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -13,11 +19,11 @@ public class DrinkQueue{
         return true;
     }
 
-    public String poll() {
+    public Drink poll() {
         if (elements.isEmpty()) {
             return null;
         }
-        return elements.removeFirst().getName();
+        return elements.removeFirst();
     }
 
     public Drink remove() {
