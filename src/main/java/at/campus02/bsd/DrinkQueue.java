@@ -31,7 +31,7 @@ public class DrinkQueue{
         return elements.isEmpty() ? null : elements.getFirst();
     }
 
-    public String element() {
-        return "";
+    public Drink element() {
+        return elements.getFirst();
     }
 }
