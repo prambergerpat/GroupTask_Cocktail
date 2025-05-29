@@ -36,9 +36,9 @@ public class CocktailTest {
 
     @DisplayName("Testing testGetAlcoholPercentZero() method")
     @Test
-    void testGetAlcoholPercentZero() {
+    void testGetAlcoholPercentVolumeZero() {
         List<Liquid> liquid= new ArrayList<>();
-        liquid.add(new Liquid("Wasser", 0.2, 0));
+        liquid.add(new Liquid("Wasser", 0.0, 0));
         Cocktail newCocktail = new Cocktail("Wasser", liquid);
 
         assertEquals(0.0, newCocktail.getAlcoholPercent());
