@@ -2,6 +2,7 @@ package at.campus02.bsd;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class DrinkQueue{
 
@@ -15,12 +16,19 @@ public class DrinkQueue{
         return "";
     }
 
-    public String remove() {
-        return "";
+    public Drink remove() {
+        if (elements.isEmpty()) {
+            throw new NoSuchElementException("Queue is empty");
+        }
+
+        Drink firstDrink = elements.getFirst();
+        elements.removeFirst();
+
+        return firstDrink;
     }
 
-    public String peek() {
-        return "";
+    public Drink peek() {
+        return elements.isEmpty() ? null : elements.getFirst();
     }
 
     public String element() {
