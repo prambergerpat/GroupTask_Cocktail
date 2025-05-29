@@ -23,7 +23,7 @@ public class DrinkQueue{
         return "";
     }
 
-    public String element() {
-        return "";
+    public Drink element() {
+        return elements.getFirst();
     }
 }
