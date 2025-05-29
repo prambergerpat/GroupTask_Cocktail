@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class DrinkQueueTest {
 
     private DrinkQueue queue;
-    private SimpleDrink simpleDrink1;
+    private SimpleDrink simpleDrink;
     private Cocktail cocktail;
     private List<Liquid> liquids;
 
@@ -25,15 +25,15 @@ public class DrinkQueueTest {
         liquids.add(new Liquid("Water", 0.5, 0));
         liquids.add(new Liquid("Whiskey", 0.05, 40));
 
-        simpleDrink1 = new SimpleDrink("WaterDrink", liquids.get(0));
+        simpleDrink = new SimpleDrink("WaterDrink", liquids.get(0));
         cocktail = new Cocktail("WaterWhiskeyCocktail", liquids);
     }
 
     @DisplayName("Test if offer adds a SimpleDrink to the queue")
     @Test
     public void testOfferAddsSimpleDrink() {
-        assertTrue(queue.offer(simpleDrink1));
-        assertEquals(simpleDrink1, queue.peek());
+        assertTrue(queue.offer(simpleDrink));
+        assertEquals(simpleDrink, queue.peek());
     }
 
     @DisplayName("Test if offer adds a Cocktail to the queue")
@@ -52,10 +52,10 @@ public class DrinkQueueTest {
     @DisplayName("Test if poll returns and removes first element")
     @Test
     public void testPollReturnsAndRemovesFirstElement() {
-        queue.offer(simpleDrink1);
+        queue.offer(simpleDrink);
         queue.offer(cocktail);
 
-        assertEquals(simpleDrink1, queue.poll());
+        assertEquals(simpleDrink, queue.poll());
         assertEquals(cocktail, queue.poll());
         assertNull(queue.poll());
     }
@@ -63,10 +63,10 @@ public class DrinkQueueTest {
     @DisplayName("Test if remove returns and removes first element")
     @Test
     public void testRemoveReturnsAndRemovesFirstElement() {
-        queue.offer(simpleDrink1);
+        queue.offer(simpleDrink);
         queue.offer(cocktail);
 
-        assertEquals(simpleDrink1, queue.remove());
+        assertEquals(simpleDrink, queue.remove());
         assertEquals(cocktail, queue.remove());
     }
 
@@ -79,9 +79,9 @@ public class DrinkQueueTest {
     @DisplayName("Test if peek returns first element without removing")
     @Test
     public void testPeekReturnsFirstElementWithoutRemoving() {
-        queue.offer(simpleDrink1);
-        assertEquals(simpleDrink1, queue.peek());
-        assertEquals(simpleDrink1, queue.peek());
+        queue.offer(simpleDrink);
+        assertEquals(simpleDrink, queue.peek());
+        assertEquals(simpleDrink, queue.peek());
     }
 
     @DisplayName("Test if peek returns null if empty")
@@ -93,9 +93,9 @@ public class DrinkQueueTest {
     @DisplayName("Test if element returns first element without removing")
     @Test
     public void testElementReturnsFirstElementWithoutRemoving() {
-        queue.offer(simpleDrink1);
-        assertEquals(simpleDrink1, queue.element());
-        assertEquals(simpleDrink1, queue.element());
+        queue.offer(simpleDrink);
+        assertEquals(simpleDrink, queue.element());
+        assertEquals(simpleDrink, queue.element());
     }
 
     @DisplayName("Test if element throws NoSuchElementException if empty")
