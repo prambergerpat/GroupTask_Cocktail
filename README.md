@@ -10,31 +10,31 @@
 - [x] create maven project and including required files
 
 - [x] create branch readme
-- [ ] create README-file and adding information
+- [x] create README-file and adding information
 
 - [x] create branch maven_detail
 - [x] extend the pom-file and testing the configuration
 
-- [ ] create branch bug_hunt
-- [ ] correct mistakes in the code
+- [x] create branch bug_hunt
+- [x] correct mistakes in the code
 
-- [ ] create branch drink
-- [ ] create class Cocktail and implement methods
+- [x] create branch drink
+- [x] create class Cocktail and implement methods
 
-- [ ] create branch queue
-- [ ] create class DrinkQueue and implement methods
+- [x] create branch queue
+- [x] create class DrinkQueue and implement methods
 
-- [ ] create branch javadoc
-- [ ] add comments
+- [x] create branch javadoc
+- [x] add comments
 
-- [ ] create branch tests
-- [ ] creating test cases
+- [x] create branch tests
+- [x] creating test cases
 
-- [ ] create branch double_queue
-- [ ] create class DoubleQueue and implement methods
-- [ ] adding test cases and comments for DoubleQueue-Class
+- [x] create branch double_queue
+- [x] create class DoubleQueue and implement methods
+- [x] adding test cases and comments for DoubleQueue-Class
 
-- [ ] create branch maven_site
+- [x] create branch maven_site
 - [ ] create maven_site documentation
 - [ ] including files from each member
 
