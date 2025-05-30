@@ -1,17 +1,17 @@
 # Pramberger Patrick
 
-## Umsetzung
-- GitHub Projekt erstellt
-- Maven detail Informationen
-- Bugs gesucht
-- Cocktail implementiert
-- DrinkQueue element-Methode implementiert
-- JavaDoc Kommentare 
-  - Cocktail
-  - IQueue
-  - DoubleQueue
-  - Liquid
-- DoubleQueue implementiert
-- Test für die Klassen
+## Implementation
+- created GitHub project
+- added information for maven detail
+- hunted the bugs
+- implemented the Cocktail.java class
+- implemented the element method in DrinkQueue.java
+- JavaDoc comments for
+  - Cocktail.java
+  - IQueue.java
+  - DoubleQueue.java
+  - Liquid.java
+- implemented DoubleQueue.java
+- implemented tests for
     - DoubleQueue
     - Cocktail
