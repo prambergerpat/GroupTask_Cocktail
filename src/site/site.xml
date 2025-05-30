@@ -15,11 +15,6 @@
     </skin>
 
     <body>
-        <menu name="Project Info">
-            <item name="Introduction" href="index.html"/>
-            <item name="Drinks" href="drinks.html"/>
-            <item name="Tests" href="test.html"/>
-        </menu>
 
         <menu name="Team Members">
             <item name="Pramberger Patrick" href="member1.html"/>
