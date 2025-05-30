@@ -35,8 +35,8 @@
 - [x] adding test cases and comments for DoubleQueue-Class
 
 - [x] create branch maven_site
-- [ ] create maven_site documentation
-- [ ] including files from each member
+- [x] create maven_site documentation
+- [x] including files from each member
 
 ## Features and Usages
 -	Create liquid objects
